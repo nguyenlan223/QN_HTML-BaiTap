@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autumn Travel Company</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        .wrapper {
+            max-width: 1089px;
+            margin: 0 auto;
+            background-color: azure;
+            border: 1px solid red;
+        }
+        
+        header {
+            background-color: coral;
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        nav {
+            background-color: rgb(213, 223, 221);
+            overflow: hidden;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        nav ul li {
+            display: inline;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+            color: #333;
+        }
+        
+        nav ul li a:hover {
+            background-color: #ddd;
+        }
+        
+        .banner-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        #content {
+            display: flex;
+            padding: 20px;
+            background-color: rgb(190, 177, 135);
+        }
+        
+        aside {
+            width: 40%;
+            background-color: rgb(231, 228, 220);
+            padding: 20px;
+        }
+        
+        section {
+            width: 60%;
+            background-color: rgb(228, 224, 222);
+            padding: 20px;
+        }
+        
+        footer {
+            background-color: rgb(140, 190, 147);
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+        }
+        
+        form label,
+        form input {
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: coral;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        form button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>AUTUMN TRAVEL COMPANY</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#order">Order</a></li>
+            </ul>
+        </nav>
+        <img src="https://vyctravel.com/libs/upload/ckfinder/images//banner/banner(2).jpg" alt="Ảnh mùa thu" class="banner-img">
+        <div id="content">
+            <aside>
+                <h2>Sign-Up for Membership Benefits</h2>
+                <form>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required><br>
+                    <label for="repassword">Retype Password:</label>
+                    <input type="password" id="repassword" name="repassword" required><br>
+                    <button type="submit">SIGN ME UP</button>
+                </form>
+            </aside>
+            <section>
+                <h2>Links</h2>
+                <ul>
+                    <li><a href="#">Make your Own Tour</a></li>
+                    <li><a href="#">Maldives Tours</a></li>
+                    <li><a href="#">Nature & Adventure</a></li>
+                    <li><a href="#">Readymade Tours</a></li>
+                    <li><a href="#">Europe Tours</a></li>
+                    <li><a href="#">Russia Tours</a></li>
+                </ul>
+                <h2>More info</h2>
+                <p>Our purpose is the client who gives us the opportunity to serve and to make known the reality around the world.</p>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2017 Software Engineering Department | Test Date: 16 Sept 2017</p>
+        </footer>
+    </div>
+</body>
+
+</html>
